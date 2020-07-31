@@ -9,13 +9,14 @@
         <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
         <p class="text-white">{{ .content | markdownify }}</p>
         <div class="input-group">
-          <form action="{{ site.Params.mailchimp_form_action }}" method="post" class="w-100" name="mc-embedded-subscribe-form" target="_blank">
-            <input type="email" id="email" class="form-control" name="email" placeholder="{{ .placeholder }}"
-              required>
+          <form action="https://gmail.us17.list-manage.com/subscribe/post" method="post" _lpchecked="1" class="w-100">
+            <input type="hidden" name="u" value="42188939a8252f58b220aab15">
+            <input type="hidden" name="id" value="01b967bbc5">
+            <input type="email" autocapitalize="off" class="form-control" autocorrect="off" name="MERGE0" id="MERGE0"
+              size="25" value="" placeholder="{{ .placeholder }}">
+            <input type="hidden" name="ht" value="e399d861ca84ef60dd90094e51c11c1db909684c:MTU5NjA1MDY5MS43NTgx">
+            <input type="hidden" name="mc_signupsource" value="hosted">
             <button class="btn btn-main btn-submit" type="submit" name="subscribe">{{i18n "subscribe"}}</button>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-              <input type="text" name="{{ site.Params.mailchimp_form_name }}" tabindex="-1">
-            </div>
           </form>
         </div><!-- /input-group -->
       </div>
