@@ -18,7 +18,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
-  color: $color-text-on-primaryColor;
+  color: $color-text-on-darkBg;
   font-family: $primary-font;
   -webkit-font-smoothing: antialiased;
 }
@@ -98,7 +98,7 @@ a {
   background-image: url(../images/call-to-action.jpg);
 }
 
-.bg-orange {
+.bg-primary {
   background: $primary-color;
 }
 
@@ -176,7 +176,7 @@ a:active {
   padding-bottom: 70px;
 
   h2 {
-    color: $color-text-on-primaryColor;
+    color: $color-text-on-darkBg;
     padding-bottom: 15px;
     text-transform: capitalize;
     font-weight: 700;
