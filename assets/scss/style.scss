@@ -5,8 +5,10 @@ $primary-font: 'Josefin Sans',
 sans-serif;
 $secondary-font: 'Droid Serif',
 serif;
-$primary-color: #f9a743;
-$color-darkGrey: #939497;
+$primary-color: #bc0d0d;
+$color-darkGrey: #1f1f1f;
+$color-text-on-darkBg: #c9c7c7;
+$color-text-on-primaryColor: #eaeaea;
 $icon-font: 'themefisher-font' !important;
 
 /*--
@@ -16,7 +18,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
-  color: #3b4045;
+  color: $color-text-on-primaryColor;
   font-family: $primary-font;
   -webkit-font-smoothing: antialiased;
 }
@@ -153,6 +155,10 @@ a:active {
   margin-bottom: 40px;
 }
 
+.text-color-on-dark-bg {
+  color: $color-text-on-darkBg;
+}
+
 .slick-slide {
   outline: 0
 }
@@ -170,7 +176,7 @@ a:active {
   padding-bottom: 70px;
 
   h2 {
-    color: #3c3c3c;
+    color: $color-text-on-primaryColor;
     padding-bottom: 15px;
     text-transform: capitalize;
     font-weight: 700;
@@ -186,7 +192,8 @@ a:active {
 }
 
 .subheading {
-  color: #3c3c3c;
+  // color: #3c3c3c;
+  color: $color-text-on-darkBg;
   padding-bottom: 15px;
   text-transform: capitalize;
   font-weight: 500;
@@ -239,7 +246,12 @@ a:active {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #444;
+  //color: #444;
+  color: $color-text-on-darkBg;
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
 }
 
 .lang-list {
