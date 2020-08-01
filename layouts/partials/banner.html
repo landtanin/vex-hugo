@@ -12,7 +12,11 @@
 			<div class="col-md-6 align-self-center text-center text-md-left">
 				<div class="block">
 					<h1 class="font-weight-bold mb-4 font-size-60">{{ .title | markdownify }}</h1>
-					<p class="mb-4">{{ .content | markdownify }}</p>
+					<p class="mb-4">
+						{{ .content1 | markdownify }} <br>
+						{{ .content2 | markdownify }} <br>
+						{{ .content3 | markdownify }}
+					</p>
 					{{ if .button.enable }}
 					{{ with .button }}
 					<a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a>
