@@ -6,6 +6,7 @@ sans-serif;
 $secondary-font: 'Droid Serif',
 serif;
 $primary-color: #f9a743;
+$color-darkGrey: #939497;
 $icon-font: 'themefisher-font' !important;
 
 /*--
@@ -97,6 +98,10 @@ a {
 
 .bg-orange {
   background: $primary-color;
+}
+
+.bg-darkGrey {
+  background: $color-darkGrey;
 }
 
 .bg-opacity {
