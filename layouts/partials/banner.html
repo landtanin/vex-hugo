@@ -10,7 +10,11 @@
 				<img class="img-fluid" src="{{ .image | absURL }}" alt="">
 			</div>
 			<div class="col-md-6 align-self-center text-center text-md-left">
-				<div class="block text-color-on-dark-bg">
+				<div class="text-color-on-dark-bg block">
+					<h1 class="text-color-on-primary-color font-weight-bold mb-4 font-size-50" color=#fff>
+						<img class="img-fluid" src="images/logo.png" alt="" width="55px">
+						SpeechWonder
+					</h1>
 					<h1 class="font-weight-bold mb-4 font-size-50">{{ .title | markdownify }}</h1>
 					<p class="mb-4">
 						{{ .content1 | markdownify }} <br>
