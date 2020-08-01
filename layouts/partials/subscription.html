@@ -9,13 +9,13 @@
         <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
         <p class="text-white">{{ .content | markdownify }}</p>
         <div class="input-group">
-          <form action="https://gmail.us17.list-manage.com/subscribe/post" method="post" _lpchecked="1" class="w-100">
-            <input type="hidden" name="u" value="42188939a8252f58b220aab15">
-            <input type="hidden" name="id" value="01b967bbc5">
-            <input type="email" autocapitalize="off" class="form-control" autocorrect="off" name="MERGE0" id="MERGE0"
+          <form action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post" _lpchecked="1" class="w-100" target="_blank">
+            <input type="hidden" name="u" value="{{ site.Params.subscription.mailchimp_form_u }}">
+            <input type="hidden" name="id" value="{{ site.Params.subscription.mailchimp_form_id }}">
+            <input type="email" autocapitalize="off" class="form-control" autocorrect="off" name="{{ site.Params.subscription.mailchimp_form_name }}" id="{{ site.Params.subscription.mailchimp_form_name }}"
               size="25" value="" placeholder="{{ .placeholder }}">
-            <input type="hidden" name="ht" value="e399d861ca84ef60dd90094e51c11c1db909684c:MTU5NjA1MDY5MS43NTgx">
-            <input type="hidden" name="mc_signupsource" value="hosted">
+            <input type="hidden" name="ht" value="{{ site.Params.subscription.mailchimp_form_ht }}">
+            <input type="hidden" name="mc_signupsource" value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}">
             <button class="btn btn-main btn-submit" type="submit" name="subscribe">{{i18n "subscribe"}}</button>
           </form>
         </div><!-- /input-group -->
