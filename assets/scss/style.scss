@@ -192,7 +192,6 @@ a:active {
 }
 
 .subheading {
-  // color: #3c3c3c;
   color: $color-text-on-darkBg;
   padding-bottom: 15px;
   text-transform: capitalize;
@@ -212,13 +211,13 @@ a:active {
   padding: 15px 40px;
   display: inline-block;
   background-color: $primary-color;
-  box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
   background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
 
   &:hover,
   &:focus {
     background-color: $primary-color;
     color: #fff;
+    box-shadow: 0 15px 40px rgba(207, 53, 14, 0.5);
   }
 }
 
@@ -438,7 +437,7 @@ a:active {
   a {
     font-size: 14;
     font-weight: 700;
-    color: #444;
+    color: $color-text-on-darkBg;
     padding: 10px;
   }
 }
@@ -456,12 +455,12 @@ footer {
   p.copyright-text {
     font-weight: 300;
     font-size: 12px;
-    color: #888;
+    color: $color-text-on-darkBg;
     letter-spacing: 3px;
     margin-top: 15px;
 
     a {
-      color: #282828;
+      color: $primary-color;
 
       &:hover {
         text-decoration: none;
