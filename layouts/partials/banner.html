@@ -16,6 +16,7 @@
 						SpeechWonder
 					</h1>
 					<h1 class="font-weight-bold mb-4 font-size-50">{{ .title | markdownify }}</h1>
+					<h3 class="font-weight-bold mb-4 font-size-50">{{ .subtitle | markdownify }}</h3>
 					<p class="mb-4">
 						{{ .content1 | markdownify }} <br>
 						{{ .content2 | markdownify }} <br>
@@ -37,7 +38,7 @@
 							<input type="hidden" name="mc_signupsource"
 								value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}">
 							<button class="btn btn-main btn-submit" type="submit"
-								name="subscribe">{{i18n "subscribe"}}</button>
+								name="subscribe">{{i18n "try_it_for_free"}}</button>
 						</form>
 					</div>
 					{{ end }}
