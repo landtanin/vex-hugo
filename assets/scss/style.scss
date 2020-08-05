@@ -475,6 +475,12 @@ footer {
   }
 }
 
+.general-link {
+  a {
+    color: $primary-color;
+  }
+}
+
 // product single
 p.price {
   font-size: 30px;
