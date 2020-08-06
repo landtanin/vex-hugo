@@ -14,7 +14,7 @@
             <input type="hidden" name="id" value="{{ site.Params.subscription.mailchimp_form_id }}">
             <input type="email" autocapitalize="off" class="form-control" autocorrect="off" name="{{ site.Params.subscription.mailchimp_form_name }}" id="{{ site.Params.subscription.mailchimp_form_name }}"
               size="25" value="" placeholder="{{ .placeholder }}">
-            <input type="hidden" name="ht" value="{{ site.Params.subscription.mailchimp_form_ht }}">
+
             <input type="hidden" name="mc_signupsource" value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}">
             <button class="btn btn-main btn-submit" type="submit" name="subscribe">{{i18n "subscribe"}}</button>
           </form>
