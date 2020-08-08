@@ -24,7 +24,7 @@
 					{{ with .button }}
 					<!-- <a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a> -->
 					<div class="input-group">
-						<form action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
+						<form id="first_subscription_form" action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
 							_lpchecked="1" class="w-100" target="_blank">
 							<input type="hidden" name="u" value="{{ site.Params.subscription.mailchimp_form_u }}">
 							<input type="hidden" name="id" value="{{ site.Params.subscription.mailchimp_form_id }}">

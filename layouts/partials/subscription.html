@@ -9,7 +9,7 @@
         <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
         <p class="text-white">{{ .content | markdownify }}</p>
         <div class="input-group">
-          <form action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post" _lpchecked="1" class="w-100" target="_blank">
+          <form id="second_subscription_form" action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post" _lpchecked="1" class="w-100" target="_blank">
             <input type="hidden" name="u" value="{{ site.Params.subscription.mailchimp_form_u }}">
             <input type="hidden" name="id" value="{{ site.Params.subscription.mailchimp_form_id }}">
             <input type="email" autocapitalize="off" class="form-control" autocorrect="off" name="{{ site.Params.subscription.mailchimp_form_name }}" id="{{ site.Params.subscription.mailchimp_form_name }}"
