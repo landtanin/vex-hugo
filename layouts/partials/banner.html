@@ -23,6 +23,7 @@
 					{{ if .button.enable }}
 					{{ with .button }}
 					<!-- <a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a> -->
+					<!-- TODO: Make this reusable for -->
 					<div class="input-group">
 						<form id="first_subscription_form" action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
 							_lpchecked="1" class="w-100" target="_blank">
