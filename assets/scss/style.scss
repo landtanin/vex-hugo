@@ -9,6 +9,7 @@ $primary-color: #bc0d0d;
 $color-darkGrey: #1f1f1f;
 $color-text-on-darkBg: #c9c7c7;
 $color-text-on-primaryColor: #eaeaea;
+$color-blue-accent: #3b78fd;
 $icon-font: 'themefisher-font' !important;
 
 /*--
@@ -303,6 +304,49 @@ a:active {
   .btn-main {
     margin-top: 15px;
   }
+}
+
+/*--
+    Cookie-notice start
+--*/
+.wrapper {
+  padding: 32px;
+}
+
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #333134;
+  color: $color-text-on-darkBg;
+  padding: 18px 32px;
+  box-shadow: 0 -2px 16px rgba(72, 83, 94, 0.39);
+  
+  transition: 400ms;
+}
+
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  align-items: center;
+  color: $color-blue-accent;
+}
+
+.cookie-content {
+  align-items: center;
+}
+
+.cookie-btn {
+  background: $color-blue-accent;
+  border: 0;
+  color: $color-text-on-primaryColor;
+  padding: 8px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /*--
