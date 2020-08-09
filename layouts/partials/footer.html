@@ -3,7 +3,9 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}> {{ else }} {{ .Title }} {{ end }}</a>
+          <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">{{ if site.Params.logo }} <img
+              src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"
+              {{end}}> {{ else }} {{ .Title }} {{ end }}</a>
           <ul class="list-inline footer-menu">
             {{ range site.Menus.footer }}
             <li class="list-inline-item">
@@ -31,3 +33,16 @@
 <!-- Main Script -->
 {{ $script := resources.Get "js/script.js" }}
 <script src="{{ $script.Permalink }}"></script>
+
+<!-- Scripts for mailchimp embedded form -->
+<script type='text/javascript' src="/my_js/mailchimp-signup.js"></script>
+<!-- <script type='text/javascript'>(function ($) {
+    window.fnames = new Array();
+    window.ftypes = new Array();
+    fnames[0] = 'EMAIL';
+    ftypes[0] = 'email';
+  }(
+    jQuery));
+  var $mcj = jQuery.noConflict(true);
+</script> -->
+<!-- End Scripts for mailchimp embedded form -->

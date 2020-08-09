@@ -9,22 +9,34 @@
         <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
         <p class="text-white">{{ .content | markdownify }}</p>
         <div class="input-group">
-          <form id="second_subscription_form"
-            action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
-            _lpchecked="1" class="w-100" target="_blank">
-            <input type="email" autocapitalize="off" class="form-control" autocorrect="off"
-              name="{{ site.Params.subscription.mailchimp_form_name }}"
-              id="{{ site.Params.subscription.mailchimp_form_name }}" size="25" 
-              placeholder="{{ .placeholder }}">
 
-            <input type="hidden" name="mc_signupsource"
-              value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}">
+          <!-- Begin Mailchimp Signup Form -->
+          <form action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
+            id="second_subscription_form" name="second_subscription_form" class="validate" target="_blank" novalidate>
 
-            <button class="btn btn-main btn-submit" type="submit" name="subscribe">{{i18n "subscribe"}}</button>
+            <div class="mc-field-group2">
+              <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL"
+                placeholder="{{ .placeholder }}">
+            </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response2" style="display:none"></div>
+              <div class="response" id="mce-success-response2" style="display:none"></div>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                name="b_42188939a8252f58b220aab15_01b967bbc5" tabindex="-1" value=""></div>
+
+            <button id="mc-embedded-subscribe" class="btn-submit btn-main btn" type="submit" name="submit"
+              value="Subscribe">
+              {{i18n "try_it_for_free"}}
+            </button>
           </form>
-        </div><!-- /input-group -->
+
+          <!--End mc_embed_signup-->
+        </div>
       </div>
     </div>
+  </div>
   </div>
 </section><!-- #call-to-action close -->
 {{- end }}

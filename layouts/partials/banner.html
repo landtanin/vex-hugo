@@ -23,19 +23,17 @@
 					{{ if .button.enable }}
 					{{ with .button }}
 					<!-- <a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a> -->
-					<!-- TODO: Make this reusable for -->
 					<div class="input-group">
 
 						<!-- Begin Mailchimp Signup Form -->
-						<!-- Add G Analytics ID -->
-						<form
-							action="https://dev.us17.list-manage.com/subscribe/post?u=42188939a8252f58b220aab15&amp;id=01b967bbc5"
-							method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-							class="validate" target="_blank" novalidate>
+						<!-- TODO: Add G Analytics ID -->
+						<form action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
+							id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+							target="_blank" novalidate>
 
 							<div class="mc-field-group">
 								<input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL"
-									placeholder="Email">
+									placeholder="{{ .placeholder }}">
 							</div>
 							<div id="mce-responses" class="clear">
 								<div class="response" id="mce-error-response" style="display:none"></div>
@@ -51,28 +49,7 @@
 							</button>
 						</form>
 
-						<script type='text/javascript'
-							src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-						<script
-							type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 						<!--End mc_embed_signup-->
-
-						<!-- <form id="first_subscription_form"
-							action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
-							_lpchecked="1" class="w-100">
-							<input type="email" autocapitalize="off" class="form-control" autocorrect="off"
-								name="{{ site.Params.subscription.mailchimp_form_name }}"
-								id="{{ site.Params.subscription.mailchimp_form_name }}" size="25" 
-								placeholder="{{ .placeholder }}">
-
-							<input type="hidden" name="mc_signupsource"
-								value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}">
-
-							<input type="hidden" name="ht" value="91c295e90c435a11eaf408b0ef759ef673e2b37d:MTU5Njk2MzQ2OC4yNDIy">
-							<button class="btn btn-main btn-submit" type="submit" name="submit" value="Subscribe">
-								{{i18n "try_it_for_free"}}
-							</button>
-						</form> -->
 					</div>
 					{{ end }}
 					{{ end }}
