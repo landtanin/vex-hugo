@@ -25,17 +25,16 @@
 					<!-- <a href="{{.link|absLangURL}}" class="btn btn-main">{{.label}}</a> -->
 					<!-- TODO: Make this reusable for -->
 					<div class="input-group">
-						<form id="first_subscription_form" action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
+						<form id="first_subscription_form"
+							action="{{ site.Params.subscription.mailchimp_form_action_url }}" method="post"
 							_lpchecked="1" class="w-100" target="_blank">
-							<!-- <input type="hidden" name="u" value="{{ site.Params.subscription.mailchimp_form_u }}">
-							<input type="hidden" name="id" value="{{ site.Params.subscription.mailchimp_form_id }}"> -->
 							<input type="email" autocapitalize="off" class="form-control" autocorrect="off"
 								name="{{ site.Params.subscription.mailchimp_form_name }}"
 								id="{{ site.Params.subscription.mailchimp_form_name }}" size="25" value=""
 								placeholder="{{ .placeholder }}">
 
-							<input type="hidden" name="mc_signupsource"
-								value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}">
+							<!-- <input type="hidden" name="mc_signupsource"
+								value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}"> -->
 							<button class="btn btn-main btn-submit" type="submit"
 								name="subscribe">{{i18n "try_it_for_free"}}</button>
 						</form>
