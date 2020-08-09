@@ -461,11 +461,13 @@ a:active {
 }
 
 .input-group {
-  margin-top: 30px;
+  // margin-top: 30px;
   position: relative;
+  display: inline-block;
 
   .btn-submit {
-    padding: 10.5px 40px !important;
+    width: 40%;
+    padding: 10.5px 20px !important;
     position: absolute;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -474,8 +476,11 @@ a:active {
   }
 
   input {
+    width: 60%;
     height: 50px;
     border-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     border: none;
     padding-left: 15px;
     box-shadow: none;
@@ -566,7 +571,7 @@ s.price {
   }
 
   &::placeholder {
-    font-size: 80%;
+    font-size: 100%;
   }
 }
 
