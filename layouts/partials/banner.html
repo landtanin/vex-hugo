@@ -33,8 +33,8 @@
 								id="{{ site.Params.subscription.mailchimp_form_name }}" size="25" value=""
 								placeholder="{{ .placeholder }}">
 
-							<!-- <input type="hidden" name="mc_signupsource"
-								value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}"> -->
+							<input type="hidden" name="mc_signupsource"
+								value="{{ site.Params.subscription.mailchimp_form_mc_signupsource }}">
 							<button class="btn btn-main btn-submit" type="submit"
 								name="subscribe">{{i18n "try_it_for_free"}}</button>
 						</form>
