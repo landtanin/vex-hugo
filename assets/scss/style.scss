@@ -466,7 +466,7 @@ a:active {
   display: inline-block;
 
   .btn-submit {
-    width: 40%;
+    width: 38.2%; // golden ratio number 61.8/38.2 = 1.618
     padding: 10.5px 10px !important;
     position: absolute;
     border-top-left-radius: 0;
@@ -477,7 +477,7 @@ a:active {
   }
 
   input {
-    width: 60%;
+    width: 61.8%; // golden ratio number 61.8/38.2 = 1.618
     height: 50px;
     border-radius: 40px;
     border-top-right-radius: 0;
