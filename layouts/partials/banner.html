@@ -16,11 +16,12 @@
 						Transcrybr
 					</h1>
 					<h1 class="font-weight-bold mb-4 font-size-50">{{ .title | markdownify }}</h1>
-					<h3 class="font-weight-bold mb-4 font-size-50">{{ .subtitle | markdownify }}</h3>
 
 					<a href="{{ site.Params.appStoreDownloadURL }}">
-						<img src="images/download-app-store.svg" alt="Download on the App Store" height="60"> 
+						<img class="donwload-on-app-store" src="images/download-app-store.svg" alt="Download on the App Store" height="60"> 
 					</a>
+
+					<h3 class="font-weight-bold mb-4 font-size-50">{{ .subtitle | markdownify }}</h3>
 
 					<!-- <p class="mb-4">
 						{{ .content | markdownify }}
